@@ -1,0 +1,149 @@
+/*Ref: HTML & CSS Design and Build Websites. John Wiley & Sons. */
+
+/* Paragraphs*/
+p {font-family: Tahoma;}
+
+
+body {background-color: lightblue; background-image: url('plain2.jpg');
+                        background-repeat: no-repeat; background-size: cover; background-attachment: fixed;
+                        background-position: right top; margin-origin: 200px;}
+.gol {color: red}
+
+/* A tag attribute*/
+a:visited {background-size: cover; color: DodgerBlue}
+a:hover {color: black; background-color: lightblue }
+
+
+/* h1 attribute*/
+/*Ref: HTML & CSS Design and Build Websites. John Wiley & Sons. */
+h1 {background-color: DodgerBlue;
+    font-weight: normal;
+    position: relative;
+    margin: 40px 0;}
+h1::before{
+    content:"";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: crimson;
+    bottom:-10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+
+.h1 {text-align: center; color: black; font-size: 18pt}
+
+/* logo */
+/*Ref: HTML & CSS Design and Build Websites. John Wiley & Sons. */
+.logo{text-align: center;}
+
+.imageh:hover {text-align: center}
+
+
+/* configuring the footer*/
+.footer {clear: both; background-color: grey; padding: 20px 10px;}
+
+.footer p {font-family: Helvetica, Arial, sans-serif;font-size: 80%; text-align: left;}
+
+.footer a {color: white;}
+
+/* image styling*/
+/*Ref: HTML & CSS Design and Build Websites. John Wiley & Sons. */
+    /*modifying the gallery img*/
+    .gallery img {
+        width: 300px;
+        transition: 1s;
+        padding: 50px;
+        border: solid 2px black;
+    }
+
+    /*modifying the gallery class*/
+    /*Ref: HTML & CSS Design and Build Websites. John Wiley & Sons. */
+    .gallery {
+        margin: 10px 50px;
+    }
+
+    /*images hover*/
+    .gallery img:hover{
+        filter: grayscale(100%);
+        transform: scale(1.1);
+        }
+
+nav a{font-size: 18pt}
+
+
+/* lists*/
+li {color: blue}
+
+
+/* form */
+        /* Style inputs, select elements and textareas */
+        input[type=text], select, textarea{
+          width: 20%;
+          padding: 13px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-sizing: border-box;
+          resize: vertical;
+        }
+
+        /* Style the label to display next to the inputs */
+        label {
+          padding: 12px 12px 12px 0;
+          display: inline-block;
+        }
+
+        /* Style the submit button */
+        input[type=submit] {
+          background-color: #04AA6D;
+          color: white;
+          padding: 13px 19px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          float: right;
+        }
+
+        /* Style the container */
+        .container {
+          border-radius: 6px;
+          background-color: #f2f2f2;
+          padding: 21px;
+        }
+
+        /* Floating column for labels: 25% width */
+        .col-25 {
+          float: left;
+          width: 25%;
+          margin-top: 6px;
+        }
+
+        /* Floating column for inputs: 75% width */
+        .col-75 {
+          float: left;
+          width: 75%;
+          margin-top: 6px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .col-25, .col-75, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+          }
+        }
+
+
+
+
+
+
+
